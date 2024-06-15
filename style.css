@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+body {
+    padding-top: 20px; 
+    background-color: #181d29;
+    color: #ffffff;
+}
+ .navbar {
+    background-color: #181d29; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    font-family: Arial, sans-serif; /* Font settings */
+}
+.nav-link{
+    color: #ffffff; /* White text color */
+    font-size: 15px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link:hover {
+    color: #0bb5a8; /* Lighter color on hover */
+}
+.navbar-brand {
+    font-size: 25px;
+}
+.navbar-toggler {
+    border-color: #16dbd1;
+}
+.navbar-toggler-icon{
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2316dbd1' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.custom-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+}
+.custom-paragraph {
+    font-family: 'Georgia', seyrif;
+    font-size: 2em;
+    color: #19977e;
+    border-right: 2px solid #16dbd1;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3b6462; }
+}
+#intro {
+    align-items: flex-start; /* Align items to the top */
+    padding-top: 0px; 
+    height: 100vh;/* Adjust based on navbar height */
+}
+.card {
+    margin-right: 40px; /* Add margin to the right of each card */
+}
+.custom-card {
+    width: 15rem; /* Adjust the width as needed */
+    height: 30rem; /* Adjust the height as needed */
+    background-color: #0a4744;
+    color: #ffffff;
+}
+.custom-card .card-img-top {
+    height: 8rem; /* Adjust the height of the image */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+.card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+.custom-btn {
+    background-color: #dd20209a; /* Custom background color */
+    color: #fff; /* Custom text color */
+    border: none; /* Remove border */
+}
+
+.custom-btn:hover {
+    background-color: #ac0606; /* Darken background color on hover */
+    color: #fff; /* Maintain text color on hover */
+}
+.profile-img {
+    width: 200px;  /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed to match width for circular shape */
+    object-fit: cover; /* Ensures the image covers the entire container without stretching */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+@media (min-width: 768px) {
+    .profile-img {
+        margin: 0; /* Remove auto margin for larger screens */
+    }
+
+    #about-me .col-md-6:nth-child(1) {
+        text-align: left; /* Align the image to the left on larger screens */
+    }
+}
+
+.custom-input {
+    background-color: #04061485; 
+    border-color: #252020; 
+}
+.form-control {
+    color: white;
+    background-color: #333; /* Dark background color for contrast */
+}
+.form-control::placeholder {
+    color: #ccc; /* Light color for placeholder text */
+}
+
+.custom-input:focus {
+    background-color: #fafbff; /* Slightly darker grey when focused */
+    border-color: #999; /* Darker grey border when focused */
+}
