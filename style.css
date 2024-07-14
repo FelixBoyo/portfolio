@@ -117,3 +117,10 @@ body {
     background-color: #fafbff; /* Slightly darker grey when focused */
     border-color: #999; /* Darker grey border when focused */
 }
+
+.text-color {
+    color: #16dbd1;
+}
+.second-color{
+    color: #ffffff;
+}
